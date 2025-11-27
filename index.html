@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+
+  <title>my-portfolio</title>
+</head>
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+<body>
+  <div id="app" class="">
+
+
+    <header class="  bg-gray-950 p-4">
+      <div class=" max-w-7xl mx-auto flex justify-between items-center">
+
+
+        <div class="flex flex-row items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+            stroke="#000000" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-code-xml-icon lucide-code-xml bg-[#50d71e] p-1.5 rounded-lg m-2 ">
+            <path d="m18 16 4-4-4-4" />
+            <path d="m6 8-4 4 4 4" />
+            <path d="m14.5 4-5 16" />
+          </svg>
+          <h1 class="text-3xl font-bold text-white font-mono">Dev Agustín</h1>
+        </div>
+
+        <nav class="text-white">
+          <ul class="flex space-x-4">
+            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Inicio</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+
+            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Proyectos</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+
+            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">About</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+
+            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Contacto</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    <main class="grid gap-4 sm:grid-cols-2 p-10 items-center">
+
+      <div class="text-white space-y-4">
+        <h2 class="text-5xl font-bold font-mono">Hola! Soy Agustín 👋</h2>
+        <p class="text-lg text-gray-300 font-mono">
+          Desarrollador web especializado en JavaScript, React y Node.js.
+        </p>
+        <a href="#proyectos"
+          class="inline-block bg-[#50d71e] text-black font-mono px-6 py-3 rounded-lg shadow-md hover:brightness-110 transition">
+          Ver mis proyectos
+        </a>
+      </div>
+
+      <div class="flex justify-center">
+        <img src="/src/assets/profile.png" class="w-64 rounded-3xl shadow-xl" alt="">
+      </div>
+
+    </main>
+
+
+    <footer class="mt-6 text-center text-sm text-gray-500">
+      <p>Check the heading size and button styles — if styled, Tailwind is active.</p>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
