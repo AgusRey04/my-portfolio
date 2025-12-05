@@ -1,86 +1,139 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml+png" href="/public/foto.PNG" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/src/style.css" rel="stylesheet">
-
-  <title>my-portfolio</title>
+  <meta name="description"
+    content="Portfolio de Reymundez Agustín, tecnico electronico y estudiante de desarrollo web" />
+  <title>Agustín Reymundez</title>
 </head>
 
 
 <body>
-  <div id="app" class="">
+  <header class="fixed top-0 z-50 w-full bg-gray-950/90 p-4 ">
+    <div class=" max-w-7xl mx-auto flex justify-between items-center">
+      <div class="flex flex-row items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#000000"
+          stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-code-xml-icon lucide-code-xml bg-[#50d71e] p-1.5 rounded-lg m-2 ">
+          <path d="m18 16 4-4-4-4" />
+          <path d="m6 8-4 4 4 4" />
+          <path d="m14.5 4-5 16" />
+        </svg>
+        <h1 class="text-3xl font-bold text-white font-mono">Dev Agustín</h1>
+      </div>
 
+      <nav class="text-white ">
+        <div class="sm:block hidden">
+          <ul class=" flex space-x-4">
+            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Inicio</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
 
-    <header class="fixed top-0 z-50 w-full bg-gray-950/90 p-4 ">
-      <div class=" max-w-7xl mx-auto flex justify-between items-center">
+            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Proyectos</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
 
+            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">About</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
 
-        <div class="flex flex-row items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
-            stroke="#000000" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-code-xml-icon lucide-code-xml bg-[#50d71e] p-1.5 rounded-lg m-2 ">
-            <path d="m18 16 4-4-4-4" />
-            <path d="m6 8-4 4 4 4" />
-            <path d="m14.5 4-5 16" />
-          </svg>
-          <h1 class="text-3xl font-bold text-white font-mono">Dev Agustín</h1>
+            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Contacto</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+          </ul>
         </div>
+        <div class="sm:hidden ">
+          <button id="menu-button" class="text-white p-2 hover:bg-[#50d71e] hover:text-black rounded-full">
+            <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+              </path>
+            </svg>
+            <span
+              class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span>
+          </button>
+        </div>
+      </nav>
 
-        <nav class="text-white ">
-          <div class="sm:block hidden">
-            <ul class=" flex space-x-4">
-              <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
-                    class="px-1 relative z-10 group-hover:text-black">Inicio</span>
-                  <span
-                    class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
-              </li>
+    </div>
+  </header>
+  <main>
 
-              <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
-                    class="px-1 relative z-10 group-hover:text-black">Proyectos</span>
-                  <span
-                    class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
-              </li>
+    <section class="min-h-screen flex items-center pt-24 px-4 dark:bg-gray-900">
 
-              <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
-                    class="px-1 relative z-10 group-hover:text-black">About</span>
-                  <span
-                    class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
-              </li>
-
-              <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
-                    class="px-1 relative z-10 group-hover:text-black">Contacto</span>
-                  <span
-                    class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="sm:hidden ">
-            <button id="menu-button" class="text-white p-2 hover:bg-[#50d71e] hover:text-black rounded-full">
-              <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+      <div class="flex flex-col-reverse md:flex-row items-center md:items-start gap-8 max-w-7xl mx-auto w-full">
+        <div class="flex-1 text-center md:text-left">
+          <h1 class="text-5xl sm:text-6xl mb-4 dark:text-white font-mono">Hola, soy <span
+              class="font-mono  text-[#50d71e] ">Agustín Reymundez</span></h1>
+          <h2 class="text-2xl sm:text-3xl  dark:text-white mb-6 font-mono">Desarrollador Full Stack en formación
+          </h2>
+          <p class="text-gray-400 mb-8 leading-relaxed  font-mono">
+            Técnico Electrónico y estudiante de la Tecnicatura Universitaria en Programación en la UTN. Apasionado por
+            desarrollar soluciones web modernas y funcionales que resuelvan problemas reales
+          </p>
+          <a href="#proyectos"
+            class="font-mono inline-block bg-[#50d71e] text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition-colors duration-300">
+            Ver Proyectos
+          </a>
+          <div class="flex gap-4 pt-6 justify-center  md:justify-start"><a href="https://github.com/AgusRey04"
+              target="_blank" rel="noopener noreferrer"
+              class="text-gray-600 dark:text-gray-400 hover:text-[#50d71e] transition-colors" aria-label="GitHub"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-github w-6 h-6" aria-hidden="true">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
                 </path>
-              </svg>
-              <span
-                class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span>
-            </button>
-          </div>
-        </nav>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg></a><a href="https://www.linkedin.com/in/agusrey04/" target="_blank" rel="noopener noreferrer"
+              class="text-gray-600 dark:text-gray-400 hover:text-[#50d71e] transition-colors" aria-label="LinkedIn"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-linkedin w-6 h-6" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg></a><a href="mailto:agustin@example.com"
+              class="text-gray-600 dark:text-gray-400 hover:text-[#50d71e] transition-colors" aria-label="Email"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-mail w-6 h-6" aria-hidden="true">
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              </svg></a></div>
+        </div>
+        <div class="flex-1 flex justify-center  ">
+          <div class=" w-64 h-64 md:w-94 md:h-94 rounded-full  bg-[#50d71e] absolute blur-3xl opacity-50 ">
+          </div><img src=" /public/foto-CV.jpg" alt="Agustín Reymundez"
+            class=" w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-4  border-[#50d71e]/90 shadow-lg  shadow-green-500/50 relative">
+        </div>
+      </div>
 
       </div>
-    </header>
-    <main class="grid gap-4 sm:grid-cols-2 p-10 items-center">
+    </section>
 
-    </main>
+    <!-- selction 2 -->
+    <section class="w-full relative flex items-center justify-center h-auto">
+
+    </section>
+  </main>
 
 
-    <footer class="mt-6 text-center text-sm text-gray-500">
-      <p>Check the heading size and button styles — if styled, Tailwind is active.</p>
-    </footer>
+  <footer class="mt-6 text-center text-sm text-gray-500">
+    <p>Check the heading size and button styles — if styled, Tailwind is active.</p>
+  </footer>
 
   </div>
 
