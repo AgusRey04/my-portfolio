@@ -13,17 +13,13 @@
 
 
 <body>
-  <header class="fixed top-0 z-50 w-full bg-gray-950/90 p-4 ">
+  <header class="fixed top-0 z-50 w-full bg-gray-950/90 p-">
     <div class=" max-w-7xl mx-auto flex justify-between items-center">
       <div class="flex flex-row items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#000000"
-          stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"
-          class="lucide lucide-code-xml-icon lucide-code-xml bg-[#50d71e] p-1.5 rounded-lg m-2 ">
-          <path d="m18 16 4-4-4-4" />
-          <path d="m6 8-4 4 4 4" />
-          <path d="m14.5 4-5 16" />
-        </svg>
-        <h1 class="text-3xl font-bold text-white font-mono">Dev Agustín</h1>
+        <a href="#Inicio" class="flex items-center">
+          <img src="./public/ChatGPT Image 11 dic 2025, 11_55_30 p.m..png" alt="AR Logo"
+            class="w-20 h-20 mr-3 object-contain logo-enlarge" style="filter: invert(1);" />
+        </a>
       </div>
 
       <nav class="text-white ">
@@ -41,29 +37,67 @@
                   class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
             </li>
 
-            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
-                  class="px-1 relative z-10 group-hover:text-black">About</span>
+            <li><a href="#sobre-mi" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Sobre Mí</span>
                 <span
                   class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
             </li>
 
-            <li><a href="#" class=" font-mono text-lg group relative w-max"> <span
+            <li><a href="#proyectos" class=" font-mono text-lg group relative w-max"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Proyectos</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+
+            <li><a href="#contacto" class=" font-mono text-lg group relative w-max"> <span
                   class="px-1 relative z-10 group-hover:text-black">Contacto</span>
                 <span
                   class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
             </li>
           </ul>
         </div>
-        <div class="sm:hidden ">
-          <button id="menu-button" class="text-white p-2 hover:bg-[#50d71e] hover:text-black rounded-full">
-            <svg class="w-6 h-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        <div class="sm:hidden relative">
+          <button id="menu-button"
+            class="text-white p-2 hover:bg-[#50d71e] hover:text-black rounded-full transition-colors">
+            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
               </path>
             </svg>
-            <span
-              class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+              </path>
+            </svg>
           </button>
+          <ul id="mobile-menu"
+            class="hidden absolute top-full right-0 mt-2 w-48 bg-gray-950 rounded-lg shadow-lg p-4 flex-col space-y-4 z-50">
+            <li><a href="#Inicio" class="font-mono text-lg group relative w-max block"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Inicio</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+            <li><a href="#habilidades" class="font-mono text-lg group relative w-max block"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Habilidades</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+            <li><a href="#about" class="font-mono text-lg group relative w-max block"> <span
+                  class="px-1 relative z-10 group-hover:text-black">About</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+            <li><a href="#proyectos" class="font-mono text-lg group relative w-max block"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Proyectos</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+            <li><a href="#contacto" class="font-mono text-lg group relative w-max block"> <span
+                  class="px-1 relative z-10 group-hover:text-black">Contacto</span>
+                <span
+                  class="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-[#50d71e] z-0 group-hover:h-full "></span></a>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -142,7 +176,7 @@
                   <path d="M3 9h18"></path>
                   <path d="M9 21V9"></path>
                 </svg></div>
-              <h3 class="text-xl text-gray-800 dark:text-white transition-colors">Frontend</h3>
+              <h3 class="text-xl text-gray-800 dark:text-white transition-colors font-mono">Frontend</h3>
             </div>
             <div class="flex flex-wrap gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 48 48"
@@ -213,7 +247,7 @@
                   <line x1="6" x2="6.01" y1="6" y2="6"></line>
                   <line x1="6" x2="6.01" y1="18" y2="18"></line>
                 </svg></div>
-              <h3 class="text-xl text-gray-800 dark:text-white transition-colors">Backend</h3>
+              <h3 class="text-xl text-gray-800 dark:text-white transition-colors font-mono">Backend</h3>
             </div>
             <div class="flex flex-wrap gap-2">
               <img src="./public/icons8-nodejs-96.png" alt="Node.js" width="90" height="90"
@@ -234,7 +268,7 @@
                   <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                   <path d="M3 12A9 3 0 0 0 21 12"></path>
                 </svg></div>
-              <h3 class="text-xl text-gray-800 dark:text-white transition-colors">Base de Datos</h3>
+              <h3 class="text-xl text-gray-800 dark:text-white transition-colors font-mono">Base de Datos</h3>
             </div>
             <div class="flex flex-wrap gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 48 48"
@@ -276,7 +310,7 @@
                     d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z">
                   </path>
                 </svg></div>
-              <h3 class="text-xl text-gray-800 dark:text-white transition-colors">Herramientas</h3>
+              <h3 class="text-xl text-gray-800 dark:text-white transition-colors font-mono">Herramientas</h3>
             </div>
             <div class="flex flex-wrap gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="80" height="80" viewBox="0 0 48 48"
@@ -343,14 +377,295 @@
       </div>
 
     </section>
+
+    <!-- Sección sobre-mi -->
+    <section id="sobre-mi" class="min-h-screen flex items-center py-24 px-4 bg-gray-900">
+      <div class="max-w-7xl mx-auto w-full">
+        <h2 class="text-4xl font-bold text-white mb-12 text-center font-mono">Sobre Mí</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div class="text-center md:text-left">
+            <h3 class="text-2xl font-bold text-[#50d71e] mb-6 font-mono">Mi Historia</h3>
+            <p class="text-gray-300 mb-4 leading-relaxed font-mono">
+              Soy un Técnico Electrónico apasionado por la tecnología y el desarrollo de software. Actualmente estoy
+              cursando la Tecnicatura Universitaria en Programación en la UTN, donde estoy adquiriendo conocimientos
+              sólidos en desarrollo Full Stack.
+            </p>
+            <p class="text-gray-300 mb-4 leading-relaxed font-mono">
+              Mi formación técnica en electrónica me ha dado una base sólida para entender cómo funcionan las cosas a
+              nivel fundamental, lo cual aplico en mi enfoque de desarrollo de software.
+            </p>
+            <p class="text-gray-300 leading-relaxed font-mono">
+              Me encanta crear soluciones web modernas, funcionales y que realmente resuelvan problemas. Siempre estoy
+              buscando aprender nuevas tecnologías y mejorar mis habilidades.
+            </p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-6 font-mono">Educación</h3>
+            <div class="space-y-6">
+              <div class="border-l-4 border-[#50d71e] pl-4">
+                <h4 class="text-lg font-semibold text-gray-800 dark:text-white font-mono">Tecnicatura Universitaria en
+                  Programación</h4>
+                <p class="text-gray-600 dark:text-gray-400 font-mono">UTN - En curso</p>
+              </div>
+              <div class="border-l-4 border-[#50d71e] pl-4">
+                <h4 class="text-lg font-semibold text-gray-800 dark:text-white font-mono">Técnico Electrónico</h4>
+                <p class="text-gray-600 dark:text-gray-400 font-mono">Completado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="min-h-screen py-24 px-4 bg-gray-900/95">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold text-white mb-6 text-center font-mono">Proyectos</h2>
+        <p class="text-gray-300 mb-12 text-center font-mono">Algunos de los proyectos en los que he trabajado</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Proyecto 1 -->
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+            <div class="h-48 bg-gradient-to-br from-[#50d71e] to-green-600 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-code-2">
+                <path d="m18 16 4-4-4-4"></path>
+                <path d="m6 8-4 4 4 4"></path>
+                <path d="m14.5 4-5 16"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2 font-mono">Proyecto Web</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 font-mono">
+                Aplicación web desarrollada con React y Node.js. Incluye autenticación, base de datos y API REST.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">React</span>
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">Node.js</span>
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">MongoDB</span>
+              </div>
+              <div class="flex gap-4">
+                <a href="https://github.com/AgusRey04" target="_blank" rel="noopener noreferrer"
+                  class="text-gray-600 dark:text-gray-400 hover:text-[#50d71e] transition-colors font-mono">
+                  Ver código →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+            <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-layout-dashboard">
+                <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2 font-mono">Dashboard Admin</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 font-mono">
+                Panel de administración con gráficos, tablas y gestión de usuarios. Diseño responsive y moderno.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">React</span>
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">Tailwind</span>
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">Express</span>
+              </div>
+              <div class="flex gap-4">
+                <a href="https://github.com/AgusRey04" target="_blank" rel="noopener noreferrer"
+                  class="text-gray-600 dark:text-gray-400 hover:text-[#50d71e] transition-colors font-mono">
+                  Ver código →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all">
+            <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-shopping-cart">
+                <circle cx="8" cy="21" r="1"></circle>
+                <circle cx="19" cy="21" r="1"></circle>
+                <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+              </svg>
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-800 dark:text-white mb-2 font-mono">E-commerce</h3>
+              <p class="text-gray-600 dark:text-gray-400 mb-4 font-mono">
+                Tienda online completa con carrito de compras, pasarela de pagos y panel de administración.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">React</span>
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">Node.js</span>
+                <span class="px-3 py-1 bg-[#50d71e]/20 text-[#50d71e] rounded-full text-sm font-mono">PostgreSQL</span>
+              </div>
+              <div class="flex gap-4">
+                <a href="https://github.com/AgusRey04" target="_blank" rel="noopener noreferrer"
+                  class="text-gray-600 dark:text-gray-400 hover:text-[#50d71e] transition-colors font-mono">
+                  Ver código →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class=" bg-gray-900">
+      <div class="max-w-7xl  min-h-screen mx-auto px-4 py-40  text-center">
+        <h2 class="text-4xl font-bold text-white mb-6 font-mono">Contacto </h2>
+        <p class="text-gray-400 mb-8 leading-relaxed  font-mono">¿Tienes alguna pregunta o proyecto en mente?
+          ¡Contáctame!</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 ">
+          <div class="p-8 rounded-xl shadow-lg">
+            <p class="text-2xl font-mono text-white mb-6 text-left">
+              Información de Contacto
+            </p>
+            <div class="flex items-center mb-4 gap-1 bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors">
+              <div class="bg-[#50d71e] p-3 rounded-lg mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-mail w-6 h-6" aria-hidden="true">
+                  <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                </svg>
+              </div>
+              <div>
+                <p class="text-gray-400 font-mono text-left">Email:</p>
+                <a href="mailto:agusrey04@gmail.com"
+                  class="text-gray-300 hover:text-[#50d71e] transition-colors font-mono">
+                  agusrey04@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="flex items-center mb-4 gap-1 bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors ">
+              <div class="bg-[#50d71e] p-3 rounded-lg mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-phone w-6 h-6" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <p class="text-gray-400 mt-2 font-mono text-left">Teléfono:</p>
+                <a href="tel:+54XXXXXXXXXX" class="text-gray-300 hover:text-[#50d71e] transition-colors font-mono">
+                  +54 (XXX) XXX-XXXX
+                </a>
+              </div>
+            </div>
+
+
+
+
+            <div class="flex items-center mb-6 gap-1 bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors">
+              <div class="bg-[#50d71e] p-3 rounded-lg mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-map-pin w-6 h-6" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <p class="text-gray-400 mt-2 font-mono text-left">Ubicación:</p>
+                <a href="mailto:agusrey04@gmail.com"
+                  class="text-gray-300 hover:text-[#50d71e] transition-colors font-mono">
+                  Granadero Baigorria, Santa Fe
+                </a>
+              </div>
+            </div>
+            <p class="text-2xl font-mono text-white mb-6 text-left">Redes Sociales</p>
+            <div class="flex justify-start gap-6 mb-6">
+
+              <div class="bg-gray-800 p-3 rounded-lg "><a href="https://github.com/AgusRey04" target="_blank"
+                  rel="noopener noreferrer" class="text-gray-400 hover:text-[#50d71e] transition-colors"
+                  aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-github w-6 h-6" aria-hidden="true">
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                    </path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
+                </a>
+              </div>
+
+              <div class="bg-gray-800  p-3 rounded-lg"><a href="https://www.linkedin.com/in/agusrey04/" target="_blank"
+                  rel="noopener noreferrer" class="text-gray-400 hover:text-[#50d71e] transition-colors"
+                  aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-linkedin w-6 h-6" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="p-8 ">
+            <p class="text-2xl font-mono text-white mb-6 text-left">
+              Envíame un Mensaje
+            </p>
+            <form action="mailto:agusrey04@gmail.com" method="post" enctype="text/plain">
+              <div class="mb-4 text-left">
+                <label for="name" class="block  text-gray-200  mb-2 font-mono">Nombre</label>
+                <input type="text" id="name" name="name" required
+                  class="bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
+                  placeholder="Tu Nombre">
+              </div>
+              <div class="mb-4 text-left">
+                <label for="email" class="block text-gray-200 mb-2 font-mono">Email</label>
+                <input type="email" id="email" name="email" required
+                  class=" bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
+                  placeholder="tu@email.com">
+              </div>
+              <div class="mb-4 text-left">
+                <label for="message" class="block text-gray-200   mb-2 font-mono">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required
+                  class="bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
+                  placeholder="Cuéntame sobre tu proyecto..."></textarea>
+              </div>
+              <button type="submit"
+                class="w-full bg-[#50d71e] text-black px-6 py-3 rounded-lg hover:bg-[#45c019] transition-colors flex items-center justify-center gap-2"><span>Enviar
+                  Mensaje</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-send w-5 h-5" aria-hidden="true">
+                  <path
+                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                  </path>
+                  <path d="m21.854 2.147-10.94 10.939"></path>
+                </svg></button>
+            </form>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="bg-gray-950 text-center py-8 px-4">
 
-  <footer class=" mt-6 text-center text-sm text-gray-500">
-    <p>Check the heading size and button styles — if styled, Tailwind is active.</p>
+    <p class="text-gray-400 font-mono">© 2025 Agustín Reymundez.
+    </p>
+
   </footer>
-
-  </div>
 
 </body>
 
