@@ -677,23 +677,23 @@
             <p class="text-2xl font-mono text-white mb-6 text-left">
               Envíame un Mensaje
             </p>
-            <form action="mailto:agusrey04@gmail.com" method="post" enctype="text/plain">
+            <form id="contact-form">
               <div class="mb-4 text-left">
                 <label for="name" class="block  text-gray-200  mb-2 font-mono">Nombre</label>
-                <input type="text" id="name" name="name" required
+                <input type="text" id="name" name="name"
                   class=" text-white bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
                   placeholder="Tu Nombre">
               </div>
               <div class="mb-4 text-left">
                 <label for="email" class="block text-gray-200 mb-2 font-mono">Email</label>
-                <input type="email" id="email" name="email" required
-                  class=" bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
+                <input type="text" id="email" name="email"
+                  class=" text-white bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
                   placeholder="tu@email.com">
               </div>
               <div class="mb-4 text-left">
                 <label for="message" class="block text-gray-200   mb-2 font-mono">Mensaje</label>
-                <textarea id="message" name="message" rows="5" required
-                  class="bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
+                <textarea id="message" name="message" rows="5"
+                  class=" text-white bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
                   placeholder="Cuéntame sobre tu proyecto..."></textarea>
               </div>
               <button type="submit"
@@ -707,6 +707,7 @@
                   <path d="m21.854 2.147-10.94 10.939"></path>
                 </svg></button>
             </form>
+            <div id="form-status" class="mt-4 text-left text-sm text-gray-300"></div>
           </div>
 
 
@@ -722,6 +723,8 @@
     </p>
 
   </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="/src/porfolio.js"></script>
 
 </body>
 
