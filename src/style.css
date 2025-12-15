@@ -1,13 +1,11 @@
-/* Directivas de Tailwind: adaptadas a la versión instalada (v4) */
 @import "tailwindcss";
 @tailwind utilities;
 
-/* Clase para escalar solo el logo sin afectar el layout */
 .logo-enlarge {
     display: inline-block;
     transform: scale(1.5);
     transform-origin: center;
-    /* empuja el logo hacia la derecha sin afectar elementos hermanos */
+
     margin-left: 0.75rem;
 }
 
