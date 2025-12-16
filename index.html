@@ -726,19 +726,24 @@
                 <input type="text" id="name" name="name"
                   class=" text-white bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
                   placeholder="Tu Nombre">
+                <p id="name-error" class="text-red-500 text-sm mt-1"></p>
               </div>
               <div class="mb-4 text-left">
                 <label for="email" class="block text-gray-200 mb-2 font-mono">Email</label>
                 <input type="text" id="email" name="email"
                   class=" text-white bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
                   placeholder="tu@email.com">
+                <p id="email-error" class="text-red-500 text-sm mt-1"></p>
               </div>
               <div class="mb-4 text-left">
                 <label for="message" class="block text-gray-200   mb-2 font-mono">Mensaje</label>
                 <textarea id="message" name="message" rows="5"
                   class=" text-white bg-gray-800 w-full px-4 py-3 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#50d71e] font-mono placeholder:text-gray-500"
                   placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                <p id="message-error" class="text-red-500 text-sm mt-1"></p>
               </div>
+
+
               <button type="submit"
                 class="w-full bg-[#50d71e] text-black px-6 py-3 rounded-lg hover:bg-[#45c019] transition-colors flex items-center justify-center gap-2"><span>Enviar
                   Mensaje</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
