@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @tailwind utilities;
+@import "tailwindcss-animated";
 
 .logo-enlarge {
     display: inline-block;
