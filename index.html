@@ -14,8 +14,14 @@
 <body>
   <header class="fixed top-0 z-50 w-full bg-gray-950/90 p-">
     <div class=" max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex flex-row items-center"> <a href="#Inicio" class="flex items-center"> <img src="./Logo-AR.png"
-            alt="AR Logo" class="w-20 h-20 mr-3 object-contain logo-enlarge" style="filter: invert(1);" /> </a> </div>
+      <div class="flex flex-row items-center"> <a href="#Inicio" class="flex items-center"><img src="./Logo-AR.png"
+            alt="AR Logo"
+            class="transform w-20 h-20 mr-3 object-contain logo-enlarge transition duration-300 hover:rotate-10 hover:scale-90 hover:filter-none"
+            style="filter: invert(1);" />
+          >
+
+        </a>
+      </div>
       <nav class="text-white ">
         <div class="sm:block hidden">
           <ul class=" flex space-x-4">
@@ -72,13 +78,16 @@
     <section id="Inicio" class="min-h-screen flex items-center pt-24 px-4 dark:bg-gray-900">
       <div class="flex flex-col-reverse md:flex-row items-center md:items-start gap-8 max-w-7xl mx-auto w-full">
         <div class="flex-1 text-center md:text-left">
-          <h1 class="text-5xl sm:text-6xl mb-4 dark:text-white font-mono">Hola, soy <span
-              class="font-mono text-[#50d71e] ">Agustín Reymundez</span></h1>
+          <h1
+            class="hero-title text-5xl sm:text-6xl mb-4 dark:text-white font-mono animate-fade-down animate-once animate-duration-1000 animate-ease-linear">
+            Hola, soy <span
+              class="font-mono text-[#50d71e] animate-fade-down animate-once animate-duration-1000 animate-ease-linear">Agustín
+              Reymundez</span></h1>
           <h2 class="text-2xl sm:text-3xl dark:text-white mb-6 font-mono">Desarrollador Full Stack </h2>
           <p class="text-gray-400 mb-8 leading-relaxed font-mono"> Estudiante de la Tecnicatura Universitaria en
             Programación en la Universidad Tecnológica Nacional Rosario, enfocado en el desarrollo de aplicaciones web
             modernas y funcionales. </p> <a href="#proyectos"
-            class="font-mono inline-block bg-[#50d71e] text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition-colors duration-300">
+            class=" font-mono inline-block bg-[#50d71e] text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-green-600 transition-colors duration-300">
             Ver Proyectos </a> <a href="./Agustin-Reymundez-cv-dev.pdf" target="_blank" rel="noopener noreferrer"
             class="font-mono inline-block text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-200 hover:text-black transition-colors duration-300 border-white border-2 ml-4">
             Descargar CV </a>
@@ -390,7 +399,7 @@
         <p class="text-gray-300 mb-12 text-center font-mono">Algunos de los proyectos en los que he trabajado</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> <!-- Proyecto 1 -->
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-[#50d71e] transition-all">
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-[#50d71e] transition ease-in-out duration-300 hover:scale-105 ">
             <div class="h-48 from-[#50d71e] to-green-600 flex items-center justify-center"> <img
                 src="camptura-AlquiMaq.png" alt="AlquiMaq S.R.L" class="w-full h-full object-cover"> </div>
             <div class="p-6">
@@ -423,7 +432,7 @@
             </div>
           </div> <!-- Proyecto 2 -->
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-[#50d71e] transition-all">
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-[#50d71e] transition ease-in-out duration-300 hover:scale-105 ">
             <div class="h-48 from-blue-500 to-blue-700 flex items-center justify-center overflow-hidden"> <img
                 src="Captura-Resultados-Electorales.png" alt="Resultados Electorales de Argentina"
                 class="w-full h-full object-cover"> </div>
@@ -435,7 +444,7 @@
                 y generación de informes. (Realizado Trabajo Práctico de la UTN) </p>
               <div class="flex flex-wrap mb-4"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60"
                   viewBox="0 0 48 48"
-                  class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-3xl transition-colors">
+                  class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-3xl ">
                   <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
                   <path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
                   <path fill="#FFF"
@@ -444,7 +453,7 @@
                     d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z">
                   </path>
                 </svg> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" viewBox="0 0 48 48"
-                  class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-3xl transition-colors">
+                  class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-3xl ">
                   <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
                   <path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path>
                   <path fill="#FFF"
@@ -469,7 +478,7 @@
             </div>
           </div> <!-- Proyecto 3 -->
           <div
-            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-[#50d71e] transition-all">
+            class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-[#50d71e] transition ease-in-out duration-300 hover:scale-105 ">
             <div class="h-48 from-purple-500 to-purple-700 flex items-center justify-center"> <img
                 src="https://media.licdn.com/dms/image/v2/D4D22AQFJMfF2U09ECA/feedshare-shrink_2048_1536/B4DZg.EBpBHwAs-/0/1753387901172?e=1767225600&amp;v=beta&amp;t=Ztzxz-FYe9Zh-qlvoxwL0cF8Kz21MU1UpsssV87ul5Q"
                 loading="lazy" alt="Rincón del Remo" id="ember3078" class="w-full h-full object-cover"> </div>
@@ -616,6 +625,7 @@
         </div>
       </div>
     </section>
+
   </main>
   <footer class="bg-gray-950 text-center py-8 px-4">
     <p class="text-gray-400 font-mono">© 2025 Agustín Reymundez. </p>
