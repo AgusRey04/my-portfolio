@@ -10,6 +10,23 @@
     margin-left: 0.75rem;
 }
 
+/* Iconos monocromo (line-art negro): se usan como máscara para pintarlos
+   con el verde de marca, ya que sobre el fondo oscuro no se verían. */
+.icon-tint {
+    background-color: #50d71e;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+.icon-postgresql {
+    -webkit-mask-image: url("/icons8-postgresql-50.png");
+    mask-image: url("/icons8-postgresql-50.png");
+}
+
 @media (min-width: 768px) {
     .logo-enlarge {
         transform: scale(1.7);
