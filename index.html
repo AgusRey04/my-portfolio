@@ -528,10 +528,12 @@
                 <span
                   class="text-xs font-mono px-2 py-1 rounded-full bg-[#50d71e]/20 text-[#50d71e] border border-[#50d71e]/40">Individual</span>
               </div>
-              <p class="text-gray-400 mb-4 font-mono"> Aplicación web mobile-first desarrollada en 7 días
-                para el Hackathon AWS + Kiro. Genera planificaciones educativas mediante IA a partir de instrucciones
-                escritas o por voz. Desarrollé frontend y backend, integré Gemini AI, Amazon S3 para imágenes y
-                exportación a PDF desde el cliente. </p>
+              <p class="text-gray-400 mb-4 font-mono"> Genera planificaciones educativas completas en menos
+                de un minuto a partir de una instrucción por voz o texto, alineadas al diseño curricular de nivel
+                inicial de Santa Fe: actividades diarias, materiales, adaptaciones de inclusión y fundamentación
+                pedagógica. Desarrollado en solitario de punta a punta en 7 días para el Hackathon AWS + Kiro,
+                trabajando con Kiro en flujo spec-driven (requisitos, diseño y tareas documentados) combinado con vibe
+                coding, y validado con testing basado en propiedades sobre 19 invariantes de corrección. </p>
               <div class="flex flex-wrap mb-4"> <img src="./react-svgrepo-com.svg" alt="React" width="60"
                   class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl object-contain transition-colors">
                 <img src="./typescript.svg" alt="TypeScript" width="60"
@@ -551,10 +553,13 @@
                   class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl object-contain transition-colors">
                 <img src="./vercel.svg" alt="Vercel" width="60"
                   class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl object-contain transition-colors">
+                <img src="./kiro.svg" alt="Kiro" width="60"
+                  class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl object-contain transition-colors">
               </div>
-              <div class="flex gap-4"> <a href="#" target="_blank" rel="noopener noreferrer"
+              <div class="flex gap-4"> <a href="https://github.com/AgusRey04/AWS-y-Kiro-Hackathon" target="_blank"
+                  rel="noopener noreferrer"
                   class="text-gray-400 hover:text-[#50d71e] transition-colors font-mono"> Ver código
-                  → </a> <a href="#" target="_blank" rel="noopener noreferrer"
+                  → </a> <a href="https://aws-y-kiro-hackathon.vercel.app/" target="_blank" rel="noopener noreferrer"
                   class="text-gray-400 hover:text-[#50d71e] transition-colors font-mono"> Demo
                   → </a> </div>
             </div>
@@ -570,9 +575,11 @@
                   class="text-xs font-mono px-2 py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/40">Grupal
                   (3)</span>
               </div>
-              <p class="text-gray-400 mb-4 font-mono"> API REST para la gestión de gastos compartidos en
-                viajes grupales. Desarrollé el backend con ASP.NET Core y Clean Architecture, autenticación JWT con
-                roles y subroles, y preparé el despliegue en AWS Elastic Beanstalk. </p>
+              <p class="text-gray-400 mb-4 font-mono"> API REST para dividir gastos en viajes grupales, con
+                tres estrategias de reparto (igualitario, por porcentaje y personalizado), registro de pagos entre
+                participantes y autenticación JWT con roles. Desarrollé el backend con Clean Architecture y patrón
+                Repository, middleware global de errores y documentación OpenAPI, con despliegue en AWS Elastic
+                Beanstalk y CI/CD en GitHub Actions. </p>
               <div class="flex flex-wrap mb-4"> <img src="./csharp.svg" alt="C#" width="60"
                   class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl object-contain transition-colors">
                 <img src="./icons8-net-framework.svg" alt=".NET 10" width="60"
@@ -588,7 +595,8 @@
                 <img src="./aws.svg" alt="AWS Elastic Beanstalk" width="60"
                   class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl object-contain transition-colors">
               </div>
-              <div class="flex gap-4"> <a href="#" target="_blank" rel="noopener noreferrer"
+              <div class="flex gap-4"> <a href="https://github.com/TPI-Entre-Todos/Entre-Todos-API" target="_blank"
+                  rel="noopener noreferrer"
                   class="text-gray-400 hover:text-[#50d71e] transition-colors font-mono"> Ver código
                   → </a> </div>
             </div>
@@ -604,8 +612,11 @@
                   class="text-xs font-mono px-2 py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/40">Grupal
                   (3)</span>
               </div>
-              <p class="text-gray-400 mb-4 font-mono"> Plataforma de alquiler de máquinas con sistema
-                de roles (cliente, admin, sysadmin). CRUD completo, autenticación JWT y panel de administración </p>
+              <p class="text-gray-400 mb-4 font-mono"> Plataforma de alquiler de maquinaria de
+                construcción con tres niveles de permisos (cliente, administrador y sysadmin) y solicitudes que
+                recorren estados de pendiente a aprobada, rechazada o completada, validando disponibilidad por rango de
+                fechas. Trabajé en el frontend con React: el módulo de gestión de alquileres, el panel de
+                administración, el consumo de la API REST y la validación de formularios. </p>
               <div class="flex flex-wrap gap-2 mb-4"> <img src="./react-svgrepo-com.svg" alt="React" width="60"
                   class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl object-contain transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" viewBox="0 0 48 48"
@@ -640,7 +651,7 @@
               <h3 class="text-xl font-bold text-white mb-2 font-mono">Resultados Electorales de
                 Argentina</h3>
               <p class="text-gray-400 mb-4 font-mono"> Aplicación web para visualizar resultados
-                electorales de Argentina utilisando la API del gobierno. Incluye mapas interactivos, gráficos dinámicos
+                electorales de Argentina utilizando la API del gobierno. Incluye mapas interactivos, gráficos dinámicos
                 y generación de informes. (Realizado Trabajo Práctico de la UTN) </p>
               <div class="flex flex-wrap mb-4"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60"
                   viewBox="0 0 48 48" class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl ">
@@ -688,10 +699,11 @@
                   class="text-xs font-mono px-2 py-1 rounded-full bg-blue-500/20 text-blue-400 border border-blue-500/40">Grupal
                   (10)</span>
               </div>
-              <p class="text-gray-400 mb-4 font-mono"> Plataforma web para la gestión de perchas y
-                alquiler de kayaks en guarderías náuticas, con sistema de roles y paneles de administración. Proyecto
-                académico UTN desarrollado en equipo, donde colaboré exclusivamente en el frontend, implementando
-                interfaces y consumiendo la API. </p>
+              <p class="text-gray-400 mb-4 font-mono"> Plataforma para guarderías náuticas: gestión de
+                perchas, reserva de embarcaciones y alquiler de kayaks entre usuarios con autorización previa, sobre
+                cuatro roles (administrador, encargado, propietario y arrendatario). Proyecto académico UTN en equipo,
+                donde trabajé exclusivamente el frontend en React, implementando las interfaces y el consumo de la
+                API. </p>
               <div class="flex flex-wrap "> <img src="./react-svgrepo-com.svg" alt="React" width="60"
                   class="bg-gray-800 text-gray-300 px-3 py-1 rounded-3xl object-contain transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" viewBox="0 0 48 48"
@@ -711,7 +723,8 @@
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                     <rect width="4" height="12" x="2" y="9"></rect>
                     <circle cx="4" cy="4" r="2"></circle>
-                  </svg> </a> <a href="https://github.com/AgusRey04" target="_blank" rel="noopener noreferrer"
+                  </svg> </a> <a href="https://github.com/francocaivano3/RinconDelRemo-Front" target="_blank"
+                  rel="noopener noreferrer"
                   class="text-gray-400 hover:text-[#50d71e] transition-colors font-mono"> Ver código
                   → </a> </div>
             </div>
